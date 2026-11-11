@@ -93,6 +93,7 @@ buildPythonPackage (finalAttrs: {
   pythonImportsCheck = [ "mcp" ];
 
   nativeCheckInputs = [
+    pytest9_1CheckHook
     blockbuster
     coverage
     dirty-equals
@@ -103,7 +104,6 @@ buildPythonPackage (finalAttrs: {
     pytest-asyncio
     pytest-examples
     pytest-xdist
-    pytest9_1CheckHook
     pyyaml
     trio
     zensical
